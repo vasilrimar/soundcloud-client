@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function Stream({ tracks = [] }) {
+function Stream({ tracks = []}) {
+	console.log(tracks);
+
 	return (
 		<div>
 			{
 				tracks.map((track, key) => {
-					return <div key={key}> { track.title } </div>				
+					return <div className="track" key={key}> { track.title } </div>		
 				})
 			}
 		</div>
 	)
 }
+
 
 export default Stream;
