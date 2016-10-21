@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js ./src/**/*.spec.js",
-		"test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
@@ -46,6 +46,8 @@
   },
   "dependencies": {
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.0"
   }
 }
